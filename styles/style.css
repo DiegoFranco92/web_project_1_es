@@ -7,23 +7,75 @@
   margin: 0 auto;
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  
+  
 }
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  width: 100vh;
   /* parameters for the header section */
 }
 
+.logo_place_header {
+  position: absolute;
+  z-index: auto;
+  margin-top: 30px;
+  margin-left: 64px;
+}
+
+.header-container {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__title {
+  margin-left: 64px;
+  width: 730px;
+  font-size: 102px;
+  font-weight: bold;
+}
+
+.subtitle {
+  position: absolute;
+  z-index: auto;
+  height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.main-ilustration_container {
+  display: flex;
+  width: 700px;
+  align-items:flex-end;
+  justify-content:baseline
+
+}
+
+.main-ilustration {
+  position: absolute;
+  height: 608px;
+  width: 756px;
+}
+
+.square {
+  background-color: #2F80ED;
+  height: 568px;
+  width: 568px;
+}
+
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
-.header__square-pic {
+/*.header__square-pic {
   height: 568px;
   width: 568px;
 }
 
 /* including elements with key-value modifiers */
-.table__cell_theme_dark {
+/*.table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
