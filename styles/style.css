@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .page {
   min-width: 1100px;
   /* we don't know how to make mobile versions of websites yet, */
@@ -7,66 +13,85 @@
   margin: 0 auto;
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  
-  
 }
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  width: 100vh;
-  /* parameters for the header section */
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .logo_place_header {
   position: absolute;
-  z-index: auto;
-  margin-top: 30px;
-  margin-left: 64px;
+  left: 64px;
+  top: 30px;
 }
 
-.header-container {
-  height: 700px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.logo {
+  height: 31px;
+  width: 154px;
+  z-index: 9999;
 }
 
 .header__title {
+  position: absolute;
   margin-left: 64px;
-  width: 730px;
+  width: 700px;
+}
+
+.header__title h1 {
   font-size: 102px;
   font-weight: bold;
+  line-height: 96px;
 }
 
-.subtitle {
+.header__subtitle {
   position: absolute;
-  z-index: auto;
-  height: 25px;
+  margin-left: 64px;
+  margin-bottom: 30px;
+  width: 388px;
+  z-index: 11;
+  align-self: end;
+}
+
+.header__link {
+  color: #2F80ED;
+  text-decoration: none;
+}
+
+.header__subtitle h3 {
   font-size: 18px;
   font-weight: normal;
+  line-height: 25px;
 }
 
-.main-ilustration_container {
-  display: flex;
-  width: 700px;
-  align-items:flex-end;
-  justify-content:baseline
-
-}
-
-.main-ilustration {
+.header__main-ilustration{
   position: absolute;
   height: 608px;
   width: 756px;
+  right: 0; 
+  bottom: 0;
+  z-index: 10;
+
 }
 
-.square {
-  background-color: #2F80ED;
+.header__main-ilustration img {
+  width: 100%;
+  height: 100%;
+}
+
+.header__square {
+  position: absolute;
   height: 568px;
   width: 568px;
+  background-color:  #2F80ED;
+  top: 64px;
+  right: 0;
 }
+/* End of header section */
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 /*.header__square-pic {
