@@ -72,7 +72,7 @@
   position: absolute;
   height: 608px;
   width: 756px;
-  right: 0; 
+  right: 0;
   bottom: 0;
   z-index: 10;
 
@@ -316,9 +316,6 @@
   font-weight: bold;
 }
 
-.section-subtitle {
-  text-align: center;
-}
 
 .section-subtitle_theme_dark h3 {
   line-height: 34px;
@@ -383,7 +380,7 @@
 }
 
 .footer__columns {
-  display: flex;  
+  display: flex;
   width: 90%;
   justify-content: space-between;
 }
