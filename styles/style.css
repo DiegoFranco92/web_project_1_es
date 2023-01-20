@@ -197,6 +197,7 @@
   width: 250px;
   max-width: 250px;
   min-width: 250px;
+  list-style: none;
 }
 
 .table__row-separador {
@@ -404,10 +405,7 @@
   padding-top: 100px;
 }
 
-.footer__list{
-  display: flex;
-  flex-direction: column;
-}
+
 
 .footer__column-heading {
   padding-bottom: 10px;
